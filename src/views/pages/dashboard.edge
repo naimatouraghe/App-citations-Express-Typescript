@@ -1,0 +1,67 @@
+@include('partials/head')
+
+<body>
+    @include('partials/navbar')
+
+    <main class="container">
+
+        <div id="auteurs-list">
+            <button>
+                <a href="/create">Ajouter citation</a>
+            </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Citations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @each(item in dashboard)
+                    <tr>
+                        <td>{{item.citation}}</td>
+                        
+                        <td> 
+                            <a href="/update/{{item.id}}">Modifier</a>
+                            <a href="/delete/{{item.id}}">Supprimer</a>
+                        </td>
+                    </tr>
+                    @endeach
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div id="auteurs-list">
+            <button>
+                <a href="/create-auteur">Ajouter auteur</a>
+            </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Auteurs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @each(item in dashboard2)
+                    <tr>
+                        <td>{{item.username}}</td>
+                        
+                        <td> 
+                            <a href="/update-auteur/{{item.id}}">Modifier</a>
+                            <a href="/delete-auteur/{{item.id}}">Supprimer</a>
+                        </td>
+                    </tr>
+                    @endeach
+                </tbody>
+            </table>
+            
+        </div>
+    
+        
+    
+    
+        
+    </main>
+
+@include('partials/footer')
+

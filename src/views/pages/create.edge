@@ -1,0 +1,28 @@
+@include('partials/head')
+@include('partials/navbar')
+
+<body>
+
+    <main class="container">
+        <form action="/create" method="POST">
+            <label for="nom">Citation:</label>
+            <input type="text" id="nom" name="citation">
+            
+
+            <label for="auteurs">Auteurs:</label>
+            <select name="auteurs" id="auteurs">
+                <option value="">--Choisissez un auteur--</option>
+                @each(item in auteurs)
+                    <option value="auteurs">{{item.username}}</option>
+                @endeach
+                
+            </select>
+            <label for="auteurs_id" style="visibility:hidden">Auteurs_id:</label>
+            <input type="text" id="auteurs_id" name="auteurs_id" style="visibility:hidden">
+
+            <input class="button" type="submit" value="Enregistrer">
+        </form>
+        <a href="/dashboard"><code><<</code>Retour</a>
+    </main>
+</body>
+@include('partials/footer')

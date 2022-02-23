@@ -1,0 +1,16 @@
+@include('partials/head')
+
+<body>
+    @include('partials/navbar')
+    
+    <main>
+            <div id="card-main">
+                <p >{{ citation }}</p>
+                <button>
+                    <a href="/profils/{{id}}">Read</a>
+                </button>
+            </div>
+    </main>
+
+@include('partials/footer')
+

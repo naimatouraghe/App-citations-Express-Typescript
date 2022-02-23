@@ -1,0 +1,16 @@
+@include('partials/head')
+@include('partials/navbar')
+
+<body>
+
+    <main class="container">
+        <form action="/create-auteur" method="POST">
+            <label for="nom">Auteur:</label>
+            <input type="text" id="nom" name="auteur">
+            
+            <input class="button" type="submit" value="Enregistrer">
+        </form>
+        <a href="/dashboard"><code><<</code>Retour</a>
+    </main>
+</body>
+@include('partials/footer')

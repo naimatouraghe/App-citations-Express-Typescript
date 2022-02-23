@@ -1,0 +1,162 @@
+/*COLORS SECTION*/
+:root {
+  --color1: #333;
+  --color4: #feeaa1;
+  --color3: #ecf8f6;
+  --color5: #226d6894;
+}
+
+/*GENERAL SETTINGS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color5);
+  background-color: var(--color4);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#main-auteurs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#card-main {
+  border: solid 1px var(--color1);
+  border-radius: 10px;
+  padding: 8%;
+}
+#citation-main {
+  border: solid 1px var(--color1);
+  border-radius: 10px;
+  padding: 2%;
+}
+#card-auteurs {
+  border: solid 1px var(--color1);
+  border-radius: 50% 50%;
+  padding: 1%;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--color1);
+}
+
+h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+
+[href] {
+  color: var(--color1);
+  text-decoration: none;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+/* NAVBAR SECTION */
+#navbar {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color5);
+  color: var(--color1);
+}
+
+#left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.logo {
+  width: 5%;
+  height: 5%;
+  margin: 10px 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li,
+a {
+  text-indent: -15px;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  display: block;
+  min-width: 7.5rem;
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  font-size: 1.375rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*BURGER MENU SECTION */
+
+/*BODY SECTION*/
+
+.card {
+  height: 10%;
+  width: 15%;
+  background-color: var(--color5);
+  border: solid var(--color1) 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 5%;
+  color: var(--color1);
+}
+
+/**table**/
+table,
+td {
+  border: 1px solid #333;
+}
+table {
+  width: 100%;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color5);
+  height: 2rem;
+  color: var(--color1);
+}

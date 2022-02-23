@@ -1,0 +1,16 @@
+@include('partials/head')
+
+<body>
+    @include('partials/navbar')
+
+    <main id="main-auteurs">
+        <!-- Completer la page Index -->
+        @each(item in auteurs)
+        <div id="card-auteurs">
+            <h2>{{item.username}}</h2>
+        </div>
+        @endeach
+    </main>
+
+
+@include('partials/footer')

@@ -1,0 +1,16 @@
+@include('partials/head')
+
+<body>
+    @include('partials/navbar')
+
+    <main class="container">
+        
+        @each(item in citations)
+        <div id="citation-main">
+        <h3>{{item.citation}}</h3>
+        </div>
+        @endeach
+    </main>
+
+@include('partials/footer')
+

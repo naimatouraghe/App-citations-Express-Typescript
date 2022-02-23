@@ -1,0 +1,18 @@
+@include('partials/head')
+@include('partials/navbar')
+<body>
+
+    <main class="container">
+        <form action="/update/{{ projets.id }}" method="POST">
+            <label for="title">Citation:</label>
+            <input type="text" id="title" name="citation" value="{{ projets.citation }}">
+
+            
+
+            
+            <input class="button" type="submit" value="Enregistrer">
+        </form>
+        <a href="/dashboard"><code><<</code>Retour</a>
+    </main>
+</body>
+@include('partials/footer')
